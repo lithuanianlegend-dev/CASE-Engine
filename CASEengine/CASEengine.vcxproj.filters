@@ -21,6 +21,18 @@
     <Filter Include="Source Files\Events">
       <UniqueIdentifier>{e211edaf-2cf4-4178-8864-f25966055bf9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{b61f9a52-3d0f-497e-837f-4b9842ed02fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Base">
+      <UniqueIdentifier>{d9e07e08-5f67-4445-b33e-dbd979aab585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Components">
+      <UniqueIdentifier>{ca3b86c8-788a-40b1-af86-3f1173be0096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Systems">
+      <UniqueIdentifier>{b4906268-4874-4173-8fd9-10d96c3be7dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
@@ -57,6 +69,21 @@
     </ClInclude>
     <ClInclude Include="CASE.h">
       <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Source Files\ECS\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseComponent.h">
+      <Filter>Source Files\ECS\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseSystem.h">
+      <Filter>Source Files\ECS\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentList.h">
+      <Filter>Source Files\ECS\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

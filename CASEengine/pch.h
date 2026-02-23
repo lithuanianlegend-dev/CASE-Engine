@@ -10,6 +10,7 @@
 #include <fstream>
 #include <algorithm>
 #include <functional>
+#include <bitset>
 
 // OPENGL
 #include <glad/glad.h>

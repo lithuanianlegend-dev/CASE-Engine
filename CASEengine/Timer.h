@@ -1,5 +1,6 @@
 #pragma once
 
+// nothings worth referencing (SEE ENGINE.H)
 namespace CASE {
 
 	class T_Timer {

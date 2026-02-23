@@ -20,6 +20,7 @@ namespace CASE {
 
 	void T_Timer::Tick()
 	{
+		// basic deltaTime calculations.
 		deltaTime = glfwGetTime() - lastFrame;
 		lastFrame = glfwGetTime();
 	}

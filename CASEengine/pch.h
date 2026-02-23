@@ -11,6 +11,8 @@
 #include <algorithm>
 #include <functional>
 #include <bitset>
+#include <queue>
+#include <map>
 
 // OPENGL
 #include <glad/glad.h>

@@ -19,9 +19,29 @@ namespace ECS {
 		CompList() = default;
 		~CompList() = default;
 
-		void Insert(const T& component)	{
-			auto component = std::find_if(data.begin(), data.end(), [&](const T& c) == component.GetID());
+		void Insert(const T& component) {
+			auto found = std::find_if(data.begin(), data.end(), [&](const T& c) {
+				return c.GetID() == component.GetID();
+				});
+			if (found == data.end()) {  // only add if it dont exist
+				data.push_back(component);
+			}
 		}
+
+		T& Get(const EntityID entity) {
+			auto comp = std::find_if(data.begin(), data.end(), [&](const T& c) { return c.GetID() == entity; });
+			assert(comp != data.end() && "ERROR: Trying to get non-existing component!");
+			return *comp;
+		}
+
+		void Erase(const EntityID entity) override final {
+			auto comp = std::find_if(data.begin(), data.end(), [&](const T& c) { return c.GetID() == entity; });
+			if (comp != data.end()) {
+				data.erase(comp);
+			}
+		}
+
+		std::vector<T> data;
 	};
 
 }

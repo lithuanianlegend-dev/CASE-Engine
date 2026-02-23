@@ -154,6 +154,7 @@
     <ClInclude Include="ComponentList.h" />
     <ClInclude Include="ECS.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="Events.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Timer.h" />

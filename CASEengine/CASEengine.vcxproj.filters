@@ -85,5 +85,8 @@
     <ClInclude Include="ComponentList.h">
       <Filter>Source Files\ECS\Base</Filter>
     </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Source Files\ECS\Base</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -9,7 +9,7 @@ namespace ECS {
 		inline const EntityID GetID() const { return entityId; }
 
 	private:
-		friend class Manager;
+		friend class EntityManager;
 		EntityID entityId;
 	};
 

@@ -33,6 +33,12 @@
     <Filter Include="Source Files\ECS\Systems">
       <UniqueIdentifier>{b4906268-4874-4173-8fd9-10d96c3be7dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\icons">
+      <UniqueIdentifier>{da981cd5-9d7b-484c-935a-83dc0e94cb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ext">
+      <UniqueIdentifier>{bed689c9-7971-4bce-89dd-b43b27936812}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
@@ -44,14 +50,17 @@
     <ClCompile Include="Engine.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\libraries\glad\src\glad.c">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>Source Files\Timer</Filter>
     </ClCompile>
     <ClCompile Include="Events.cpp">
       <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\libraries\glad\src\glad.c">
+      <Filter>Resource Files\ext</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>Resource Files\ext</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -88,5 +97,16 @@
     <ClInclude Include="EntityManager.h">
       <Filter>Source Files\ECS\Base</Filter>
     </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Resource Files\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Source Files\ECS\Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\icons\icon.png">
+      <Filter>Resource Files\icons</Filter>
+    </Image>
   </ItemGroup>
 </Project>

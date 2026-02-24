@@ -28,7 +28,7 @@ namespace ECS {
 			}
 		}
 
-		T& Get(const EntityID entity) {
+		T& GetCompList(const EntityID entity) {
 			auto comp = std::find_if(data.begin(), data.end(), [&](const T& c) { return c.GetID() == entity; });
 			assert(comp != data.end() && "ERROR: Trying to get non-existing component!");
 			return *comp;

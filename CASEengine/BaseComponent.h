@@ -4,13 +4,13 @@
 
 namespace ECS {
 	struct BaseComponent {
-		BaseComponent() { entityId = 0; }
+		BaseComponent() { entityID = 0; }
 		virtual ~BaseComponent() {}
-		inline const EntityID GetID() const { return entityId; }
+		inline const EntityID GetID() const { return entityID; }
 
 	private:
 		friend class EntityManager;
-		EntityID entityId;
+		EntityID entityID;
 	};
 
 

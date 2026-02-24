@@ -19,7 +19,7 @@ namespace CASE {
 		glfwWindowHint(GLFW_GREEN_BITS, monitor.greenBits);
 	
 		// create the actual window
-		window = glfwCreateWindow(video_width, video_height, "CASE", NULL, NULL);
+		window = glfwCreateWindow(video_width, video_height, "CASE Engine", NULL, NULL);
 		assert(window && "ERROR: Failed to create window!");
 		glfwMakeContextCurrent(window);
 
@@ -27,6 +27,11 @@ namespace CASE {
 		if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 			std::cout << "ERROR: Failed to initialize glad!" << std::endl;
 		}
+
+		// make the icon
+		GLFWimage icon[1];
+		icon[0].pixels = stbi_load("res/icons/icon.png", &icon[0].width, &icon[0].height, 0, 4);
+		glfwSetWindowIcon(window, 1, icon);
 	}
 
 	Engine::~Engine() {

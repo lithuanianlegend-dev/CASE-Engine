@@ -27,8 +27,14 @@ namespace ECS {
 			signature.insert(ComponentType<T>());
 		}
 
-		virtual void Start() {  }
-		virtual void Update() {  }
+		virtual void Start() {  } 
+		virtual void Update() { 
+			for (auto i : entities) { 
+				std::cout << i << " ";
+			}
+			std::cout << std::endl;
+		}
+		virtual void Render() {  }
 		virtual void Destroy() {  }
 
 	protected:

@@ -12,3 +12,4 @@
 #include "BaseComponent.h"
 #include "ComponentList.h"
 #include "EntityManager.h"
+#include "Entity.h"
